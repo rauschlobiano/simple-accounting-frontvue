@@ -11,13 +11,10 @@
             <div class="collapse navbar-collapse" id="navbarUser">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <router-link to="/userinfo" class="nav-link">{{user_information.email}}
+                    <router-link to="/userinfo" class="nav-link">User Info
                         <span class="sr-only">(current)</span>
                     </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/settings" class="nav-link" >Settings</router-link> 
-                </li> 
+                </li>               
             </ul>
             </div>
         </div>
@@ -26,15 +23,15 @@
     </div>
 </template>
 <script>
-import { mapGetters } from 'vuex';
+//import { mapGetters } from 'vuex';
 
 export default {
     name: 'Dashboard',
     computed: {
-        ...mapGetters({ user_information: 'user_information' }),    
+        // ...mapGetters({ user_information: 'user_information' }),    
     },
     mounted() {
-            
+        this.$router.push('/userinfo');
     },
 }
 </script>

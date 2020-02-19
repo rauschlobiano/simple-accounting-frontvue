@@ -1,12 +1,13 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import User from './store_modules/user';
-import createPersistedState from "vuex-persistedstate";
+//import createPersistedState from "vuex-persistedstate";
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-	plugins: [createPersistedState()],
+	//disabled createPersistedState for security reasons, just use it later....
+	//plugins: [createPersistedState()],
 	modules: {
 		User
 	}
