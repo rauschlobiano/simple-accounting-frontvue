@@ -2,8 +2,8 @@
 import axios from 'axios';
 
 //axios.defaults.baseURL = "http://localhost:8000/api";
-//axios.defaults.baseURL = "http://52.221.235.144/api";
-axios.defaults.baseURL = "http://localhost:8008/api";
+axios.defaults.baseURL = "http://52.221.235.144/api";
+//axios.defaults.baseURL = "http://localhost:8008/api";
 //axios.defaults.baseURL = process.env.API_URL;
 
 
