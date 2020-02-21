@@ -2,8 +2,8 @@
 import axios from 'axios';
 
 //axios.defaults.baseURL = "http://localhost:8000/api";
-axios.defaults.baseURL = "http://52.221.235.144/api";
-//axios.defaults.baseURL = "http://localhost:8008/api";
+//axios.defaults.baseURL = "http://52.221.235.144/api";
+axios.defaults.baseURL = "http://localhost:8008/api";
 //axios.defaults.baseURL = process.env.API_URL;
 
 
@@ -42,7 +42,7 @@ const actions = {
     login({commit}, user){
       return new Promise((resolve, reject) => {
           commit('auth_request')
-          axios({url: '/apilogin', data: user, method: 'POST' })
+          axios({url: '/login', data: user, method: 'POST' })
           .then(resp => {
               //console.log(resp.data.user[0]);
               localStorage.removeItem('token');
